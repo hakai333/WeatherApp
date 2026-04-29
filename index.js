@@ -6,7 +6,7 @@ const error404 = document.querySelector('.not-found');
 
 search.addEventListener('click', () =>{
 
-    const APIKey = 'tu_apiKey';
+    const APIKey = '';
     const city = document.querySelector('.search-box input').value;
     
     if (city === '')
@@ -22,6 +22,9 @@ search.addEventListener('click', () =>{
                 weatherDetails.style.display = 'none';
                 error404.style.display = 'block';
                 error404.classList.add('fadeIn');
+
+
+
                 return;
             }
         
